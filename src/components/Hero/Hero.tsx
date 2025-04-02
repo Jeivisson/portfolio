@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import SVGIMG from '../../../public/images/Avatar.png';
-import { RiNextjsLine, RiReactjsLine } from 'react-icons/ri';
+import { RiHtml5Line, RiNextjsLine, RiReactjsLine } from 'react-icons/ri';
 import { SiTypescript } from 'react-icons/si';
 
 export default function Hero() {
@@ -8,27 +8,28 @@ export default function Hero() {
     <>
       <div className=" flex h-screen justify-center items-center space-x-6 ">
         <div className="w-[450px] h-[312px] flex-col">
-          <div className="pl-6 pr-5 flex items-center w-full">
+          <div className="pl-6 pr-5  pt-8 flex items-center w-full">
             <h1 className="text-xl font-semibold mr-2">About Me</h1>
             <div className="flex-1 border-b border-black "></div>
           </div>
-          <p className="text-wrap text-[20px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          <p className="text-wrap text-[18px] mt-4 ">
+            Ashley Cabeçuda Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
             electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum
           </p>
           <div className="font-semibold flex items-center space-x-2 mt-[38px]">
-            <span>Tech Stack |</span>
+            <span className=" text-xl ">Tech Stack |</span>
             <RiNextjsLine className="size-8" />
             <RiReactjsLine className="size-8 text-blue-500" />
-            <SiTypescript className="size-8 text-blue-500" />
+            <SiTypescript className="size-8 " />
+            <RiHtml5Line className="size-8" />
           </div>
         </div>
-        <div className="pt-19">
-          <Image width={280} height={280} src={SVGIMG} alt="Self Image" />
+        <div className="pt-19 mt-12">
+          <Image width={300} height={300} src={SVGIMG} alt="Self Image" />
         </div>
       </div>
     </>
