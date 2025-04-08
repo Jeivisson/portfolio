@@ -32,6 +32,9 @@ export default function Hero() {
           <Image width={300} height={300} src={SVGIMG} alt="Self Image" />
         </div>
       </div>
+      <div className=" flex items-center justify-center">
+        <div className="w-[80%] border-b border-black "></div>
+      </div>
     </>
   );
 }
